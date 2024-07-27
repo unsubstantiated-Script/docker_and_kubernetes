@@ -8,8 +8,12 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 80
+ENV PORT 80
 
-CMD [ "node", "server.js" ]
+EXPOSE $PORT
 
-#docker run -p 3000:80 -d --name feedback-app --rm feedback-node <--deletes on shutdown
+CMD [ "npm", "start" ]
+
+# docker run -p 3000:80 -d --name feedback-app --rm feedback-node <--deletes on shutdown
+
+# docker run -p 3000:80 -d --name feedback-app --rm -v feedback:/app/feedback -v "/home/skripty/GolandProjects/docker_and_kubernetes/node-survey-app:/app" -v /app/node_modules feedback-node:volumes
