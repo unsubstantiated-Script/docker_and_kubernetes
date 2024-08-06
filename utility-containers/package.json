@@ -1,0 +1,11 @@
+{
+  "name": "skript_docker",
+  "version": "1.0.0",
+  "description": "this is my docker jazz",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
