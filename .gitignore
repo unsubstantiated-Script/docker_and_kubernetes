@@ -3,5 +3,6 @@
 .env
 *.env
 app.env
-example-1.pem
+container-deploy/example-1.pem
 *.log
+*.pem
