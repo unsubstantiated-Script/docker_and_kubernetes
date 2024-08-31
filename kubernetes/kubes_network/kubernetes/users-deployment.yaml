@@ -14,4 +14,9 @@ spec:
     spec:
       containers:
         - name: users
-          image: jusfulton1980/kub-demo-users
+          image: jusfulton1980/kub-demo-users:latest
+          env:
+            - name: AUTH_ADDRESS
+#              value: "10.109.176.123"
+#              Namespacing here to get auto-generated domains...can check available items w/ kube get namespaces
+              value: "auth-service.default"
