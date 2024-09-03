@@ -6,3 +6,4 @@ app.env
 container-deploy/example-1.pem
 *.log
 *.pem
+docker_and_kubes_2/L09-05 Docker Compose - Sample App/db/password.txt
